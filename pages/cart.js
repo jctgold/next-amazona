@@ -90,15 +90,15 @@ function CartScreen() {
             <ul>
               <li>
                 <div className="pb-3 text-xl">
-                  Subtotal ( {cartItems.reduce((a, c) => a + c.quantity, 0)} ) :
-                  ${cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
+                  Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}) : $
+                  {cartItems.reduce((a, c) => a + c.quantity * c.price, 0)}
                 </div>
               </li>
               <li>
                 <button
                   className="primary-button w-full"
                   type="button"
-                  onClick={() => router.push('/shipping')}
+                  onClick={() => router.push('login?redirect=/shipping')}
                 >
                   Check Out
                 </button>
