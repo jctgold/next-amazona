@@ -4,10 +4,11 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { XCircleIcon } from '@heroicons/react/outline';
+import dynamic from 'next/dynamic';
 
 import { Store } from '../utils/Store';
 
-export default function CartScreen() {
+function CartScreen() {
   const { state, dispatch } = useContext(Store);
   const {
     cart: { cartItems },
@@ -109,3 +110,5 @@ export default function CartScreen() {
     </Layout>
   );
 }
+
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
