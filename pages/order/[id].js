@@ -156,7 +156,7 @@ function OrderScreen() {
                   <div>${totalPrice.toFixed(2)}</div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <button
                   className="primary-button w-full"
                   // onClick={placeOrderHandler}
@@ -164,7 +164,7 @@ function OrderScreen() {
                 >
                   {loading ? 'Loading...' : 'Place Order'}
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
