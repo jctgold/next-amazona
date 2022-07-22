@@ -12,7 +12,6 @@ export default function ShippingScreen() {
     register,
     formState: { errors },
     setValue,
-    getValues,
   } = useForm();
 
   const { state, dispatch } = useContext(Store);
