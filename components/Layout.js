@@ -7,7 +7,7 @@ import { Menu } from '@headlessui/react';
 import { ToastContainer } from 'react-toastify';
 import DropdownLink from './DropdownLink';
 import Cookies from 'js-cookie';
-// import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Layout({ title, children }) {
   const { status, data: session } = useSession();
