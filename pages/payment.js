@@ -50,7 +50,7 @@ export default function PaymentScreen() {
             <input
               name="paymentMethod"
               className="p-2 outline-none focus:ring-0"
-              id="payment"
+              id={payment}
               type="radio"
               checked={selectedPaymentMethod === payment}
               onChange={() => setSelectedPaymentMethod(payment)}
